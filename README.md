@@ -25,6 +25,8 @@
 - import sqlite3, csv
 ## use the function sqlite.connect to create a file myhospitaldb with sqlite3.
 - sqlite_connection = sqlite3.connect ('MyHospital.db')
-## ceate a cursor object; this is needed to execute any opeation to the db. i.e creating tables, updating and even pint the db vesion.
+## create a cursor object; this is needed to execute any operation to the db. i.e creating tables, updating and even print the db vesion.
 -conn = sqlite_connection.cursor()
-## import 
+## import csv file using "with open" to populate your table and capture the full path where your CSV file is stored.
+- with open ('C:\python\Assignment\sqlite\Hospital.csv', 'r')
+
