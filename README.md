@@ -20,3 +20,11 @@
     Experience
 
 #Join these two tables by Hospital Id 
+
+## add  import statement to our python script to use SQLite3; and csv to upload record for you tables.
+- import sqlite3, csv
+## use the function sqlite.connect to create a file myhospitaldb with sqlite3.
+- sqlite_connection = sqlite3.connect ('MyHospital.db')
+## ceate a cursor object; this is needed to execute any opeation to the db. i.e creating tables, updating and even pint the db vesion.
+-conn = sqlite_connection.cursor()
+## import 
